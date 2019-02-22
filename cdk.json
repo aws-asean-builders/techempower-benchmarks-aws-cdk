@@ -1,0 +1,4 @@
+{
+  "app": "node bin/techempower-benchmarks-aws-cdk.js",
+  "context": {}
+}

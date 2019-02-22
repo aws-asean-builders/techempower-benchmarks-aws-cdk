@@ -1,0 +1,11 @@
+{
+  "tslint.configFile": "tslint.json",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "workbench.list.keyboardNavigation": "simple",
+  "files.exclude": {
+    "{bin,lib}/**/*.js": true,
+    "**/*.d.ts": true
+  }
+}

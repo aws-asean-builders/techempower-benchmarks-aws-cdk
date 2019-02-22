@@ -1,0 +1,30 @@
+{
+  "name": "techempower-benchmarks-aws-cdk",
+  "version": "0.1.0",
+  "description": "Use the AWS CDK to deploy a testbed on AWS for the TechEmpower Web Framework Benchmarks.",
+  "bin": {
+    "techempower-benchmarks-aws-cdk": "bin/techempower-benchmarks-aws-cdk.js"
+  },
+  "author": "Richard Neil Ilagan <me@richardneililagan.com>",
+  "scripts": {
+    "lint": "tslint -t stylish **/*.ts",
+    "test": "npm run lint",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "npm run build && npm run cdk deploy"
+  },
+  "devDependencies": {
+    "@types/node": "8.9.4",
+    "aws-cdk": "0.24.1",
+    "tslint": "5.12.1",
+    "tslint-config-standard": "8.0.1",
+    "typescript": "3.1.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "0.24.1",
+    "@aws-cdk/cdk": "0.24.1",
+    "dotenv-defaults": "1.0.2",
+    "source-map-support": "0.5.9"
+  }
+}
