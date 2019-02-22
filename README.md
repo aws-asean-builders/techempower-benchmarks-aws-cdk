@@ -9,7 +9,19 @@ on [AWS](https://aws.amazon.com).
 
 ## Architecture
 
-`stub`
+![Architecture Diagram](assets/architecture.png)
+
+The resulting Cloudformation stack deploys the above resources. The default configuration of the instances are:
+
+- 3x `m5.xlarge`
+- 1x `t3.small`
+- 1x VPC `50.0.0.0/24`
+- 2x subnets in the same AZ
+  - 1x private subnet, routed to a NAT gateway
+  - 1x public subnet, routed to an IGW
+- 1x security group assigned to all four EC2 instances
+  - allows all intra-SG comms
+  - allows SSH from `0.0.0.0/0`
 
 
 ## Usage
